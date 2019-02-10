@@ -1,9 +1,9 @@
-
+{% extends 'layout.html' %}
 <html>
   <head>
-    <title> Roster Page </title>
-
+    <title> Roster</title>
   </head>
+
   <body>
 
     {% if grade_view == "1" %}
@@ -11,4 +11,34 @@
       <ul>
       {% for student in class_roster %}
       <li>
- 
+        <h1> {{student[0]}} {{student[1]}} </h1>
+      </li>
+      {% endfor %}
+      </ul>
+    {% endif %}
+
+    {% if grade_view == "2" %}
+      <h1> Showing Student Name and Standing </h1>
+      <ul>
+      {% for student in class_roster %}
+      <li>
+        <h1> {{student[0]}} {{student[2]}} </h1>
+      </li>
+      {% endfor %}
+      </ul>
+    {% endif %}
+
+    {% if grade_view == "0" %}
+      <h1> Showing All Student Information </h1>
+      <ul>
+      {% for student in class_roster %}
+      <li>
+        <h1> {{student[0]}} {{student[1]}} {{student[2]}}
+      </li>
+      {% endfor %}
+      </ul>
+    {% endif %}
+
+
+  </body>
+</html>
