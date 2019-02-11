@@ -7,7 +7,7 @@
       <ul>
       {% for student in class_roster %}
       <li>
-        <h1> {{student[0]}} {{student[1]}} </h1>
+         <b>{{student[0]}}</b> <b>|</b> Grade: <i>{{student[1]}}</i>
       </li>
       {% endfor %}
       </ul>
@@ -18,7 +18,7 @@
       <ul>
       {% for student in class_roster %}
       <li>
-        <h1> {{student[0]}} {{student[2]}} </h1>
+        <b>{{student[0]}}</b> <b>|</b> Year: <i>{{student[2]}}</i>
       </li>
       {% endfor %}
       </ul>
@@ -29,7 +29,7 @@
       <ul>
       {% for student in class_roster %}
       <li>
-        <h1> {{student[0]}} {{student[1]}} {{student[2]}}
+         <b>{{student[0]}}</b> <b>|</b> Grade: <i>{{student[1]}}</i> <b>|</b> Year: <i>{{student[2]}}</i>
       </li>
       {% endfor %}
       </ul>
