@@ -1,11 +1,7 @@
 {% extends 'layout.html' %}
-<html>
-  <head>
-    <title> Roster</title>
-  </head>
 
-  <body>
-
+{% block body %}
+<p>
     {% if grade_view == "1" %}
       <h1> Showing Student Name and Grade </h1>
       <ul>
@@ -39,6 +35,6 @@
       </ul>
     {% endif %}
 
+</p>
 
-  </body>
-</html>
+{% endblock %}

@@ -1,11 +1,12 @@
 {% extends 'layout.html' %}
 
-<html>
-
-  <body>
+{% block body %}
+<p>
+  <ul>
     {% if student_name %}
       <h1> welcome {{student_name}} </h1>
     {% endif %}
-  </body>
+  </ul>
+</p>
 
-</html>
+{% endblock %}
